@@ -1,12 +1,16 @@
-// to init folder as nodejs project
+// to init folder as nodejs project:
 npm init -y
 
-// to install express framework
+// to install express framework:
 npm install express
 
-// to install nodemon for development phase - it reloads node server if source
+// to install nodemon for development phase - it reloads node server if source:
 files had been modified and saved
 npm install nodemon -D
 
-// to install uuid library
+// to install uuid library:
 npm install uuid
+
+
+// to install react app run from project root folder:
+npx create-react-app client

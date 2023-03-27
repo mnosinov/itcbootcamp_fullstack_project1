@@ -16,6 +16,7 @@ app.use(express.json());
 
 // all jobs
 app.get('/', (req, res) => {
+	console.log('req.query:', req.query);
 	res.send(jobs);
 });
 
@@ -52,8 +53,8 @@ app.delete('/:id', (req, res) => {
 	res.send(jobs);
 });
 
-app.listen(4001, () => {
-	console.log('Listening on port 4001');
+app.listen(4000, () => {
+	console.log('Listening on port 4000');
 });
 
 app
