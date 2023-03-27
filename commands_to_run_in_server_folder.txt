@@ -1,0 +1,9 @@
+// to init folder as nodejs project
+npm init -y
+
+// to install express framework
+npm install express
+
+// to install nodemon for development phase - it reloads node server if source
+files had been modified and saved
+npm install nodemon -D
