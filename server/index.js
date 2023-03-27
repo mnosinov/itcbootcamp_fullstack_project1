@@ -1,5 +1,6 @@
 import express from 'express';
 import { v4 as uuid4 } from 'uuid';
+import cors from 'cors';
 
 const app = express();
 
@@ -13,6 +14,7 @@ const jobs = [
 ];
 
 app.use(express.json());
+app.use(cors());
 
 // all jobs
 app.get('/', (req, res) => {

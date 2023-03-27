@@ -11,6 +11,9 @@ npm install nodemon -D
 // to install uuid library:
 npm install uuid
 
+// to install CORS library:
+npm install cors
+
 
 // to install react app run from project root folder:
 npx create-react-app client
