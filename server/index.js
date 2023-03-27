@@ -44,6 +44,14 @@ app.put('/:id', (req, res) => {
 	res.send(job);
 });
 
+// delete job
+app.delete('/:id', (req, res) => {
+	const { id } = req.params;
+	const index = jobs.findIndex( (job) => job.id == id );
+	jobs.splice(index, 1);
+	res.send(jobs);
+});
+
 app.listen(4001, () => {
 	console.log('Listening on port 4001');
 });
