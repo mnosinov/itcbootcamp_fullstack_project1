@@ -5,12 +5,10 @@ import cors from 'cors';
 const app = express();
 
 const jobs = [
-	{
-		id: uuid4(), title: "Software Engineer", company: "Google", location: "Mountain View, CA", salary: 120000, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nunc nisl tincidunt nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vitae ultricies lacinia, nunc nisl tincidunt nisl, eget aliquam nisl nisl sit amet nisl.",
-	},
-	{
-		id: uuid4(), title: "Senior Application Engineer", company: "Microsoft", location: "Vancuver", salary: 620000, description: "Sit porro rerum unde magni sequi dolores, saepe. Sapiente rem autem qui ducimus commodi. Architecto voluptatem maiores perspiciatis officiis neque. Inventore at aliquid architecto quas suscipit Doloribus delectus commodi quod"
-	}
+	{ id: uuid4(), title: "Software Engineer", company: "Google", location: "Mountain View, CA", salary: 120000, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nunc nisl tincidunt nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vitae ultricies lacinia, nunc nisl tincidunt nisl, eget aliquam nisl nisl sit amet nisl." },
+	{ id: uuid4(), title: "Senior Application Engineer", company: "Microsoft", location: "Vancuver", salary: 620000, description: "Sit porro rerum unde magni sequi dolores, saepe. Sapiente rem autem qui ducimus commodi. Architecto voluptatem maiores perspiciatis officiis neque. Inventore at aliquid architecto quas suscipit Doloribus delectus commodi quod" },
+	{ id: uuid4(), title: "Data Scientist", company: "MegaGo", location: "Moscow", salary: 11000, description: "Consectetur ex autem reprehenderit eius eaque quidem. Ex dolorem cumque ex tempora commodi Odit tempore a error soluta aspernatur Praesentium facilis quos atque voluptates pariatur adipisci Possimus illo dicta similique" },
+	{ id: uuid4(), title: "System Administrator", company: "Microsoft", location: "Vancuver", salary: 620000, description: "Sit porro rerum unde magni sequi dolores, saepe. Sapiente rem autem qui ducimus commodi. Architecto voluptatem maiores perspiciatis officiis neque. Inventore at aliquid architecto quas suscipit Doloribus delectus commodi quod" }
 ];
 
 app.use(express.json());
@@ -58,6 +56,3 @@ app.delete('/:id', (req, res) => {
 app.listen(4000, () => {
 	console.log('Listening on port 4000');
 });
-
-app
-
