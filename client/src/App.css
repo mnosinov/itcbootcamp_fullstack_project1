@@ -8,6 +8,37 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.modal-inputs {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-inputs button {
+	margin-top: 10px;
 }
