@@ -1,0 +1,10 @@
+.description-container {
+	display: flex;
+	margin: 200px auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: auto;
+	background-color: aquamarine;
+}

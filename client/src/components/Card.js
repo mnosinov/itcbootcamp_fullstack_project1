@@ -18,7 +18,9 @@ const Card = ( {job, getJobs, onEditHandler} ) => {
 			<p>salary { job.salary }</p>
 			<div>
 				<button onClick={ () => deleteJob(job.id) }>delete</button>
-				<button onClick={ () => {
+				<button onClick={ (e) => {
+						e.preventDefault();
+						//e.stopPropagation();
 						onEditHandler(job);
 					}
 				}
