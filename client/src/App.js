@@ -128,7 +128,7 @@ function App() {
 			<div className="cards">
 				{
 					jobs.map( (job) => (
-						<Link to={`/job/${job.id}`} key={job.id}>
+						<Link to={`/${job.id}`} key={job.id}>
 							<Card key={job.id} job={job} getJobs={getJobs} onEditHandler={onEditHandler} />
 						</Link>
 					))
