@@ -2,6 +2,7 @@ import './App.css';
 import Card from './components/Card';
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 
 function App() {
 	const [jobs, setJobs] = useState([]);
@@ -41,6 +42,7 @@ function App() {
   }
 
   function closeModal() {
+		clearInputs();
     setIsOpen(false);
   }
 
@@ -126,7 +128,9 @@ function App() {
 			<div className="cards">
 				{
 					jobs.map( (job) => (
-						<Card key={job.id} job={job} getJobs={getJobs} onEditHandler={onEditHandler} />
+						<Link to={`/job/${job.id}`} key={job.id}>
+							<Card key={job.id} job={job} getJobs={getJobs} onEditHandler={onEditHandler} />
+						</Link>
 					))
 				}
 			</div>
