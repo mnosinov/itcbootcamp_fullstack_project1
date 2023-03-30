@@ -16,14 +16,13 @@ const Description = () => {
 		getJob();
 	}, [id]);
 
-	console.log(8, id);
 	return (
 		<div className="description-container">
-			{job.title}
-			{job.company}
-			{job.location}
-			{job.salary}
-			{job.description}
+			<p>{job.title}</p>
+			<p>{job.company}</p>
+			<p>{job.location}</p>
+			<p>{job.salary}</p>
+			<p>{job.description}</p>
 		</div>
 	)
 };
